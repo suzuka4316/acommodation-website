@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="images/sorrento_by_the_sea_logo.jpg" alt="Sorrent by the Sea logo" />
+        </a>
+        <nav>
+            <ul>
+                <li id="HomePageLink"><a class="current" href="home.html"><b>HOME</b></a></li>
+                <li id="ActivitiesPageLink"><a href="activities.html"><b>ACTIVITIES</b></a></li>
+                <li id="ContactPageLink"><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home Page</h1>
+        <h2 class="first-h2">Welcome to Our Apartment</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/apartment_front.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/apartment_garden.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/apartment_bath_edited.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+    
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+    
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/apartment_front.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Entrance">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/apartment_garden.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Living Room with Beautiful Garden">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/apartment_bath_edited.jpg" style="width:100%"
+                        onclick="currentSlide(3)" alt="Bathroom">
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <p>Our apartment is a lazy 10-minute walk from the relaxed township of Sorrento that offers restaurants, cafes, a chemist, a supermarket, a butcher and lots more. It is located in a quiet avenue, just 4 houses from the beach. It is in easy walking distance of the ocean beaches and surf. For more information of the apartment location, please visit our <a href="contact.html">contact</a> page.</p>
+            <p>Your private luxury apartment consists of a spacious living area with leather lounge suite overlooking a sun drenched, tree-filled private garden. </p>
+            <p>A separate Queen sized bedroom suite with quality linen also overlooks the garden. The modern, elegant bathroom has a luxurious bath that entices you to unwind and relax whilst overlooking a private courtyard fernery.</p>
+            <p>The kitchenette provides everything you will need for a relaxing breakfast. We include a coffee machine and a variety of coffee pods for your enjoyment. </p>
+            <p>Two TVs are sure to make everyone happy!  An undercover BBQ area with seating offers plenty of space to stretch out and enjoy that cup of freshly brewed coffee or a glass of wine. Sit back and relax and take a breather. Read a book, go for a beach walk, have a sleep-in. It’s your private space to enjoy. </p>
+            <p>Amenities include top quality bedding, fluffy towels, bath robes, vanity packs, hair dryer, beach towels and chairs, a picnic basket, coffee machine and pods, a microwave/convection oven, a toaster, a kettle, a sandwich maker and BBQ tools. </p>
+            <p>We offer locally sourced provisions for a hearty breakfast together with home-made biscuits and chocolates.</p>
+            <p>We understand that pets are an important part of the family. We are pet friendly by arrangement - so please talk to us about your needs. We offer a fully enclosed backyard, shady trees, water bowls, food bowls and a lead if you forget one. Only 3 minutes from a leash free beach, an oval close by and if you want to sleep in we are happy to take your dog (depending on its size) for a walk in the morning.</p>
+
+            <h3>Features</h3>
+            <ul>
+                <li>Spacious living area overlooking a beautiful garden</li>
+                <li>Modern and elegant bathroom</li>
+                <li>Queen sized bedroom suite with quality linen</li>
+                <li>Kitchenette with a coffee machine and coffee pods</li>
+                <li>Two TVs with a DVD player and stereo system</li>
+                <li>Amenities</li>
+                <li>Pets allowed</li>
+                <li>Car parking</li>
+            </ul>
+            <p>This is the perfect place for a home away from home. <a href="contact.html">Contact</a> us for booking!</p>
+            <h3>Some reviews from our customers</h3>
+            <ul>
+                <li>"So sorry we had to go home after only one night. We will definitely stay two nights next time!"</li>
+                <li>"This apartment is close to everything. We didn't need the car as the walks were amazing"</li>
+                <li>"Your attention to detail made our stay so relaxed and comfortable. It was such a shame we had to drive back to our little flat, which is smaller than your apartment. We want to move in!"</li>
+                <li>"Cosy and comfortable. We imagined we owned it and enjoyed being spoilt.  Thank you." </li>
+                <li>"What a magical stay at such an amazing place. Completely self-contained and very private. We loved it and will return again and again."</li>
+                <li>"Never felt so spoilt. A perfect get away and so close to everything. We had the best bath ever!"</li>
+                <li>"A few minutes’ walk from the beach, picnic basket in hand and towel over the shoulder - can't think of anything better except that wonderful breakfast. That bacon is the best in Melbourne!"</li>
+                <li>Relaxing in that sunny garden watching our dog chasing balls. Let me stay forever!"</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <a href="contact.html">Contact Information</a>
+        <p>&#169;2020 Sorrento by the Sea</p>
+        <img src="images/facebook_small.png" alt="Facebook logo" />
+        <img src="images/instagram_small.png" alt="Instagram logo" />
+        <img src="images/twitter_small.png" alt="Twitter logo" />
+        <img src="images/youtube-variation_small.png" alt="YouTube logo" />
+    </footer>
+    
+    <script src="Script.js"></script>
+</body>
+
+</html>

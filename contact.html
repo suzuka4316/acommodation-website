@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Contact Page</title>
+    <link href="Main.css" rel="stylesheet" />
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="images/sorrento_by_the_sea_logo.jpg" alt="Sorrent by the Sea logo" />
+        </a>
+        <nav>
+            <ul>
+                <li id="HomePageLink"><a href="home.html"><b>HOME</b></a></li>
+                <li id="ActivitiesPageLink"><a href="activities.html"><b>ACTIVITIES</b></a></li>
+                <li id="ContactPageLink"><a class="current" href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+            <h2>Contact Details</h2>
+            <p>Phone number: <b>0435 123 456</b><br>Or submit your form <a href="#userForm">HERE</a></p>
+            
+            <h2>How to Access</h2>
+            <div class="map">
+                <img src="images/Sorrento_map.png" alt="map of sorrento" />
+            </div>
+            <p>Address: <b>42 Holyrood Avenue Sorrento VIC 3943</b></p>
+            <p>It is easy to find our apartment. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto the Peninsula link to Sorrento. Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from Port Melbourne to Sorrento.<br>If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot.<br>If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on 0435 123 456 as you arrive.</p>
+            
+            <h2>Pricing</h2>
+            <p>1<sup>st</sup> June - 31<sup>st</sup> August: $200 per night</p>
+            <p>1<sup>st</sup> February - 31<sup>st</sup> May: $220 per night</p>
+            <p>19<sup>th</sup> December - 31<sup>st</sup> January: $250 per night</p>
+            
+            <h2>Calculate Price</h2>
+            <p>You can calculate price for January to March 2021.</p>
+
+
+
+            <table>
+                <tr>
+                    <th>Select Month</th>
+                    <th>Add Date</th>
+                    <th>Remove Date</th>
+                    <th>Total Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="monthDropDown"></select><br>
+                        <button onclick="selectMonth()">Select</button><br>
+                    </td>
+                    <td>
+                        <select id="addDateDropDown"></select><br>
+                        <button onclick="displayPrice()">Add</button><br>
+                    </td>
+                    <td>
+                        <select id="removeDateDropDown"></select><br>
+                        <button onclick="removePrice()">Remove</button>
+                    </td>
+                    <td id="total">0</td>
+                </tr>
+            </table>
+            
+            <h2>Important Notice</h2>
+            <ul>
+                <li>The apartment is strictly non-smoking.</li>
+                <li>The pricing is for 2 people.</li>
+                <li>Total amount is payable upon booking.</li>
+                <li>A full refund will be given orior to 30 days cancellation.</li>
+                <li>50% refund will be given after 30 days of cancellation.</li>
+                <li>In the event of a weekly or monthly booking the apartment will be serviced weekly unless by prior arrangement.</li>
+            </ul>
+            
+            <h2>Submit Form</h2>
+            <form id="userForm" action="thankYou.html" onsubmit="return validateAll(this)" method="POST">
+                <p>
+                    <label for="txtName">Username:</label><br>
+                    <input type="text" id="txtName" class="valid" onblur="return validateUserName(this, txtName_Error)" />
+                    <span id="txtName_Error"></span>
+                </p>
+                <p>
+                    <label for="txtEmail">Email:</label><br>
+                    <input type="text" id="txtEmail" class="valid" onblur="return validateEmailOrPhone(this, txtEmail_Error)" />
+                    <span id="txtEmail_Error"></span>
+                </p>
+                <p>
+                    <label for="txtPhoneNumber">Phone number:</label><br>
+                    <input type="text" id="txtPhoneNumber" class="valid" onblur="return validateEmailOrPhone(this, txtPhone_Error)" />
+                    <span id="txtPhone_Error"></span>
+                </p>
+                <p>
+                    <label for="txtMessage">Tell us when and how long you are planning to stay:</label><br>
+                    <input type="text" id="txtMessage" class="valid" onblur="return validateNonEmpty(this, txtMessage_Error)" />
+                    <span id="txtMessage_Error"></span>
+                </p>
+                <input type="submit" name="Submit"><br>
+            </form>
+    </main>
+
+    <footer>
+        <a href="contact.html">Contact Information</a>
+        <p>&#169;2020 Sorrento by the Sea</p>
+        <img src="images/facebook_small.png" alt="Facebook logo" />
+        <img src="images/instagram_small.png" alt="Instagram logo" />
+        <img src="images/twitter_small.png" alt="Twitter logo" />
+        <img src="images/youtube-variation_small.png" alt="YouTube logo" />
+    </footer>
+    <script src="PriceCalculator.js"></script>
+</body>
+</html>
